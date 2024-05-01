@@ -49,7 +49,7 @@ def login_view(request):
 
         if user:
             auth.login(request, user)
-            return redirect('/pacientes/home')
+            return redirect('/paciente/home')
         
         messages.add_message(request, constants.ERROR, 'Usuário ou senha inválidos')
 
